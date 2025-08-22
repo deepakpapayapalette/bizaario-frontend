@@ -1,6 +1,9 @@
 .empoering-section .doctor-slider ul.react-multi-carousel-dot-list {
   bottom: -42px;
 }
+.partner-list-home .doctor-slider ul.react-multi-carousel-dot-list {
+  bottom: -28px;
+}
 
 .empoering-section .doctor-slider .react-multi-carousel-dot button {
   background-color: rgb(209, 209, 209);

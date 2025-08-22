@@ -14,7 +14,7 @@ const HeroSlickSlider = () => {
     slidesToShow: 1,           // show one slide
     slidesToScroll: 1,         // scroll one at a time
     fade: false,                // enable fade effect
-    autoplay: false,            // auto play
+    autoplay: true,            // auto play
     autoplaySpeed: 4000,       // 2s per slide
     pauseOnHover: true,       // keep autoplay even if hovered
     arrows: false              // hide prev/next arrows

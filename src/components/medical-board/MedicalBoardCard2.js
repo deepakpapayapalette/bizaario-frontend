@@ -49,47 +49,70 @@ return (
             partialVisible={true} 
         >
         {dominicArr.map((item) => {
-        return ( 
-                <div className="cardiology-card" key={item.id}>
-                    <img src={item.image} alt="doctor" className="img-fluid" />
-                    <div className='d-flex justify-content-between pt-4'>
-                        <div>
-                            <h5 className="doc-name">{item.name}</h5>
-                            <div className="exp" style={{fontSize:'12px'}}>{item.exp}</div>
-                        </div>
-                        <div className="profile-link">
-                            <a href="#" style={{fontSize:'12px'}} className='profile-link theme-color'>View Profile</a>
-                        </div>
-                    </div>
-
-                    <div className="content mt-4">
-                        <div className='d-flex pb-2 align-items-center'>
-                            <div className='me-2'>
-                                <img src={locationIcon} alt="icon" style={{width:'24px'}} className='img-fluid' />
-                            </div>
-
-                            <div style={{color:"#000000", fontWeight:''}}>{item.location}</div>
-                        </div>
-                        <div className='d-flex'>
-                            <div className='me-2'>
-                                <img src={workIcon} alt="icon" style={{width:'24px'}} />
-                            </div>
-
-                            <div><span style={{color:"#000000"}}>Specializes in: </span><span
-                                    style={{color:'#73747e'}}>{item.Specializes}</span></div>
-                        </div>
-                    </div>
-                    <div className="d-flex pt-3 common-btns-group1" style={{gap:'20px'}}>
-                        <div>
-                            <a href="/" className="btn common-btn-dark  ">Book an Appointments</a>
-                        </div>
-                        <div>
-                            <a href="/" className="btn  common-btn-outline ">Send Medical Query</a>
-                        </div>
-                    </div>
+        return (
+          <div className="cardiology-card" key={item.id}>
+            <img src={item.image} alt="doctor" className="img-fluid" />
+            <div className="d-flex justify-content-between pt-4">
+              <div>
+                <h5 className="doc-name">{item.name}</h5>
+                <div className="exp" style={{ fontSize: "12px" }}>
+                  {item.exp}
                 </div>
-         
-            )
+              </div>
+              <div className="profile-link">
+                <a
+                  href="#"
+                  style={{ fontSize: "12px" }}
+                  className="profile-link theme-color"
+                >
+                  View Profile
+                </a>
+              </div>
+            </div>
+
+            <div className="content mt-4">
+              <div className="d-flex pb-2 align-items-center">
+                <div className="me-2">
+                  <img
+                    src={locationIcon}
+                    alt="icon"
+                    style={{ width: "24px" }}
+                    className="img-fluid"
+                  />
+                </div>
+
+                <div style={{ color: "#000000", fontWeight: "" }}>
+                  {item.location}
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="me-2">
+                  <img src={workIcon} alt="icon" style={{ width: "44px" }} />
+                </div>
+
+                <div>
+                  <span style={{ color: "#000000" }}>Specializes in: </span>
+                  <span style={{ color: "#73747e" }}>{item.Specializes}</span>
+                </div>
+              </div>
+            </div>
+            <div
+              className="d-flex pt-3 common-btns-group1"
+              style={{ gap: "20px" }}
+            >
+              <div>
+                <a href="/" className="btn common-btn-dark  ">
+                  Book an Appointments
+                </a>
+              </div>
+              <div>
+                <a href="/" className="btn  common-btn-outline ">
+                  Send Medical Query
+                </a>
+              </div>
+            </div>
+          </div>
+        );
         })}
             </Carousel>
 </>

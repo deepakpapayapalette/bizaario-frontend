@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../components/hero/Hero'
+// import Hero from '../components/hero/Hero'
 
 // import MedicalBoard from '../components/medical-board/MedicalBoard'
 // import New from '../components/NewsAndArticles'
@@ -22,6 +22,8 @@ import HeroSlickSlider from '../components/hero/HeroSlickSlider'
 import Header from '../AppLayout/Header';
 import Footer from '../AppLayout/Footer'
 import '../assets/css/home.css'
+import HospitalPartenerHome from '../components/HospitalPartenerHome'
+import OnlineClinic from '../components/live-sessions-online-clinic/OnlineClinic'
 
 
 
@@ -37,8 +39,10 @@ const Home = () => {
       <HeroSlickSlider/>
       <Empowering />
       <MedicalBoardPartnerHospitals/> 
+      <HospitalPartenerHome/>
       <InterCollabs />
       <LiveSessions/> 
+      <OnlineClinic/>
       <NewsAndArticles />
       <Awards />
       <Testimonial /> 
